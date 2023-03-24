@@ -1,13 +1,13 @@
 # Cryptoverse - Explore the World of Cryptocurrency
 
-Cryptocurrency App powered by RapidAPI
+Cryptocurrency app show the currencies list with it's status, market and exchanges also latest news and articles,Cryptocurrency power with react with redux as state management using the power or ant-design as UI library also use tailwindcss as css utils, replace react-icon with ant-icon, support PWA and ready to install as PWA app.
 
 for [live demo](https://cryptoverse-in-react.vercel.app/)
 
 ## Screenshots
 
-![cryptocurrencies Page](assets/images/cryptocurrencies.png)
 ![homepage Page](assets/images/homepage.png)
+![cryptocurrencies Page](assets/images/cryptocurrencies.png)
 
 ## Pages
 
@@ -76,13 +76,13 @@ Start The Development Server
 npm start
 ```
 
-## Contribution handshake🤝
+## Contribution 🤝
 
 - Fork it!
 - Create your feature branch: `git checkout -b feature-name`
 - Commit your changes: `git commit -am 'Some commit message'`
 - Push to the branch: `git push origin feature-name`
-- Submit a pull request winkwink😉
+- Submit a pull request 😉
 
 ## License 📜
 
