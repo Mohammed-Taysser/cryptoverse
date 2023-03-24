@@ -4,7 +4,7 @@ const CONFIG = {
 };
 
 // Install SW
-window.addEventListener('install', (evt) => {
+this.addEventListener('install', (evt) => {
 	evt.waitUntil(
 		caches.open(CONFIG.cacheName).then((cache) => {
 			return cache.addAll(CONFIG.urlsToCache);
@@ -13,7 +13,7 @@ window.addEventListener('install', (evt) => {
 });
 
 // Listen for requests
-window.addEventListener('fetch', (evt) => {
+this.addEventListener('fetch', (evt) => {
 	evt.respondWith(
 		caches.match(evt.request).then(() => {
 			return fetch(evt.request).catch(() => {
@@ -24,7 +24,7 @@ window.addEventListener('fetch', (evt) => {
 });
 
 // Activate SW
-window.addEventListener('activate', (evt) => {
+this.addEventListener('activate', (evt) => {
 	const cacheWhiteList = [];
 
 	cacheWhiteList.push(CONFIG.cacheName);
